@@ -1,0 +1,115 @@
+/* Add some basic styles for the account page */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f9fa;;
+  }
+  
+  .profile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px 0;
+  }
+  
+  .profile img {
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .orders {
+    margin: 20px 0;
+  }
+  
+  .orders h2 {
+    margin: 0;
+  }
+  
+  .orders ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .orders li {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .orders li img {
+    max-width: 100px;
+    margin-right: 10px;
+  }
+  
+  .orders li div {
+    flex-grow: 1;
+  }
+  
+  .wishlist {
+    margin: 20px 0;
+  }
+  
+  .wishlist h2 {
+    margin: 0;
+  }
+  
+  .wishlist ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .wishlist li {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .wishlist li img {
+    max-width: 100px;
+    margin-right: 10px;
+  }
+  
+  .wishlist li div {
+    flex-grow: 1;
+  }
+  
+  .account-details {
+    margin: 20px 0;
+  }
+  
+  .account-details h2 {
+    margin: 0;
+  }
+  
+  .account-details ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .account-details li {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .account-details li img {
+    max-width: 100px;
+    margin-right: 10px;
+  }
+  
+  .account-details li div {
+    flex-grow: 1;
+  }
+  

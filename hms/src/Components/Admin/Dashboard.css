@@ -1,0 +1,22 @@
+.products__box,.user__box,.revenue__box.order__box
+{
+  border-radius: 5px;
+  padding: 20px;
+
+}
+.products__box
+{
+  background:var(--card-bg-01);
+}
+.options
+{
+  text-decoration: none;
+  color: white;
+}
+.no_underline
+{
+  text-decoration: none;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+}

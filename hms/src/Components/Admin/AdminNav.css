@@ -1,0 +1,84 @@
+ul
+{
+list-style-type: none;
+}
+
+
+
+.admin_header
+{
+    width: 100%;
+    height: auto;
+    background: lightgrey;
+    padding: 20px 0px;
+}
+.admin_nav-top
+{
+width: 100%;
+
+}
+.admin_nav-wrapper-top
+{
+display: flex;
+align-items: center;
+justify-content: space-between;
+column-gap: 3rem;
+}
+
+.admin_nav-top-right
+{
+display: flex;
+align-items: center;
+column-gap: 3rem;
+}
+.admin_nav-top-right img
+{
+border-radius: 50px;
+height: 40px;
+width: 40px;
+}
+.admin_nav-top-right .searchbox
+{
+display: flex;
+align-items: center;
+width: 1000px;
+justify-content: space-between;
+
+}
+.admin_nav-top-right span i
+{
+color: whitesmoke;
+}
+.admin_nav-top-right .logo h2{
+    font-size: 1.2rem;
+}
+
+.admin_menu
+{
+    width: 100%;
+    height: 70px;
+    line-height: 80px;
+    background-color: bisque;
+}
+
+.admin_navigation
+{
+    text-align: center;
+}
+.admin_menu_list
+{    
+    display: flex;
+     align-items: center;
+    justify-content: center; 
+    column-gap: 2.7rem; 
+ }
+
+ .admin_menu_list .admin_menu_item a
+ {
+ color:black;
+ font-weight: 500px;
+ background: whitesmoke;
+ padding: 10px 15px;
+ text-decoration: none;
+
+ }

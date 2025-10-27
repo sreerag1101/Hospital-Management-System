@@ -1,0 +1,61 @@
+import React from 'react'
+import useGetdata from '../Admin/useGetdata'
+import { db } from '../../Firebase/Config'
+import { doc,deleteDoc } from 'firebase/firestore';
+import { Col, Container, Row } from 'reactstrap';
+
+const AllUsers=()=> 
+{
+    
+  const {data:productData,loading} =useGetdata('users')
+  const deleteUsers= async id=>{
+    await deleteDoc(doc(db,'users',id));
+
+  }
+    
+  return (
+     <section>
+      <Container>
+        <Row>
+          <Col lg='12'>
+        
+    <table className='table'>
+      <thead>
+       <th>Name</th>
+       <th>Mobile</th>
+       <th>Email</th>
+       <th>Password</th>
+       <th>Action</th>
+
+      </thead>
+      <tbody>
+      {
+      loading?<h3 className='py-5 text-center fw-bold'>loading...</h3>:  productData.map(item=>(
+        <tr key={item.id}>
+           <td>{item.displayName}</td>
+           <td>{item.phone}</td>
+          <td>{item.email}</td>
+           <td>{item.password}</td>
+          
+           
+           <td><button className='btn btn-danger' onClick={()=>{deleteUsers(item.id);}}>
+            Delete</button></td>
+  
+      </tr>
+
+     ))
+      }
+      </tbody>
+    </table>
+    </Col>
+    </Row>
+      </Container>
+     </section>
+
+    
+  )
+
+  }
+
+
+export default AllUsers
